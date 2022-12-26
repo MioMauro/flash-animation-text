@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #07252d;
+}
+
+h2{
+    position: relative;
+    font-size: 4rem;    
+    text-align: center;
+    color: #74709b;
+    /* width: 100%*/
+    -webkit-box-reflect: below -23px linear-gradient(transparent,#0004);
+}
+
+h2 span{
+    animation: animate 5s linear infinite;
+}
+
+h2 span:nth-child(even){
+    animation-delay: 0.4s;
+}
+
+@keyframes animate {
+    0%,22%,28%,55.1%,60%,65.1%,80%,90.1%,92%
+
+    {
+        color: #5aa373;
+        text-shadow: none;
+    }
+    
+    22.1%,28.1%,30%,55%,60.1%,65%,80.1%,90%,92.1%,100%
+    {
+        color: #fff;
+        text-shadow:  0 0 10px #5aa373,
+        0 0 20px #5aa373,
+        0 0 40px #5aa373,
+        0 0 80px #5aa373,
+        0 0 160px #5aa373,
+        0 0 400px #5aa373;
+    }
+}
